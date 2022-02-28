@@ -1,5 +1,5 @@
 <script>
-function reverse() {
+function pere() {
 
 var e = document.getElementById("text");
 
@@ -176,7 +176,7 @@ right:0.1%;}
             
  <img src="https://i.ibb.co/72R2H1B/Zelen.png" id="pereh">
 
-<div id="block" style="display: none;"><input type="button" value="Переход" onclick="reverse()"></div>
+<div id="block" style="display: none;"><input type="button" value="Переход" onclick="pere()"></div>
 
 <script type="text/javascript">
 
