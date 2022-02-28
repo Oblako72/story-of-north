@@ -279,13 +279,13 @@ $("#answer_div").html("Сообщение доставлено "+p.data.number_m
 <div align="t" style="overflow:auto;overflow-x:hidden;height:50px;border-top:1px solid gray" id="fights"></div></td></tr></tbody></table> </td></tr> <tr><td id="matab" style="padding:0"> <div class="place">
      <?php
     $directory = "./img";    // Папка с изображениями
-    $allowed_types=array("jpg", "png", "gif");  //разрешеные типы изображений
+    $allowed_types=array("png");  //разрешеные типы изображений
     $file_parts = array();
       $ext="";
       $title="";
       $i=0;
     //пробуем открыть папку
-      $dir_handle = @opendir($directory) or die("Ошибка при открытии папки !!!");
+      $dir_handle = @opendir($directory) or die("Ошибка! Напишите одному из администрации об этом");
     while ($file = readdir($dir_handle))    //поиск по файлам
       {
       if($file=="." || $file == "..") continue;  //пропустить ссылки на другие папки
