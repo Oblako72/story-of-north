@@ -1,27 +1,39 @@
-<script>
-function pere() {
+<img src="https://i.ibb.co/603DWcd/travka.png" id="pereh">
 
-var e = document.getElementById("text");
+<div id="block" style="display: none;"><input type="button" value="Переход" onclick="reverse()"></div>
 
-var txt = e.textContent || e.innerText;
+<script type="text/javascript">
 
-var txt2 = 'тип 2';
-var txt3 = 'тип 3';
-var txt1 = 'тип 1';
-  if(txt != txt2){var newtxt = 'тип 2';}
-  if(txt != txt3){var newtxt = 'тип 3';}
-  if (txt!= txt1){var newest = 'zzzz';}
+var photo = document.getElementById('pereh');
 
+photo.onclick = function() {
 
-document.getElementById('text').innerHTML = newtxt;
+    var block = document.getElementById('block');
 
-}
+    block.style.display = 'block';
 
-
+};
 
 </script>
-<style>
 
+<div id="text"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>img[alt="www.000webhost.com"] {display: none;}</style>
+    <title>PR | CWATL</title>
+    <style>
+        body{
+            overflow-y: hidden;
+            overflow-x: hidden
+        }
 
 
 
@@ -40,7 +52,7 @@ document.getElementById('text').innerHTML = newtxt;
             top: 0;
             left: 4%;
             width: 30%;
-         
+            display: flex;
         }
 
         .profiles_exit{
@@ -172,120 +184,24 @@ position:absolute;
 top:0;
 right:0.1%;}
  </style>
- <div class="top-btns">
-            
- <img src="https://i.ibb.co/72R2H1B/Zelen.png" id="pereh">
-
-<div id="block" style="display: none;"><input type="button" value="Переход" onclick="pere()"></div>
-
-<script type="text/javascript">
-
-var photo = document.getElementById('pereh');
-
-photo.onclick = function() {
-
-    var block = document.getElementById('block');
-
-    block.style.display = 'block';
-
-};
-
-
-
-
-
-</script>
-
-  <div id="text">
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Cwatl | Игровая</title>
-</head>
-<body style="background-color:#464d47">
-<p><a href="http://www.yandex.ru">Чат</a></a></p>
-</body>
-</html>
-<p><a href="http://www.yandex.ru">Моя страница</a></a></a></p>
-<tbody><tr><td><br><div class="sources"><form method="post" name="mew_form" id="mew_form" action="#"> <table> <tr><td>Что вы хотите сказать другим котам:
-<script language="JavaScript" type="text/javascript" src="https://comet-server.com/js/lib/jquery.min.js" ></script>
-<script language="JavaScript" type='text/javascript' src="https://comet-server.com/CometServerApi.js" ></script>
 </head>
 <body>
-<div id="WebChatFormForm" ></div>
-<input type="text" id="WebChatNameID" placeholder="Укажите ваше имя..." > <br>
-<textarea id = "WebChatTextID" placeholder = "Поговорите с котами..." ></textarea><br>
-
-<input type="button" onclick="web_send_msg();" value="Мяу" >
-<div id="answer_div" ></div>
-
-<script>
-// Отправляет сообщение в чат
-function web_send_msg()
-{
-// Получение значений из элементов ввода.
-var text = $("#WebChatTextID").val(); // Получаем текст сообщения
-var name = $("#WebChatNameID").val(); // Получаем имя пользователя
-
-// Очистка поля с текстом сообщения
-$("#WebChatTextID").val("");
-
-// Добавление отправленного сообщения к списку сообщений.
-$("#WebChatFormForm").append("<p><b>"+name+": </b>"+text+"</p>");
-
-// Отправка сообщения в канал чата
-CometServer().web_pipe_send("web_chat_pipe", {"text":text, "name":name});
-}
+<body>
 
 
-// Функция выполнится после загрузки страницы
-$(document).ready(function()
-{
-CometServer().start({dev_id:19648}) // Подключаемся к комет серверу
-
-// Подписываемся на канал в который и будут отправляться сообщения чата.
-CometServer().subscription("web_chat_pipe", function(msg)
-{
-console.log(msg)
-// Добавление полученного сообщения к списку сообщений.
-$("#WebChatFormForm").append("<p><b>"+msg.data.name+": </b>"+msg.data.text+"</p>");
-});
-
-// Подписываемся на канал в который и будут отправляться уведомления о доставке отправленных сообщений.
-CometServer().subscription("#web_chat_pipe", function(p)
-{
-console.log(p)
-$("#answer_div").html("Сообщение доставлено "+p.data.number_messages+" получателям. "+p.data.error);
-});
-});
-</script>
 
 
-</body>
-</html>
-</body>
 
-<<div class="profiles_exit">                
-            </div>
-
-            <div class="parametrs">
-                <div id="stats" button><img src="assets/btns/stats.png?20130910043254" alt="Параметры"></div>
-                <div id="bag" button><img src="assets/btns/bag.png?20130910043254" alt="Инвентарь"></div>
-                <div id="friends" button><img src="assets/btns/friends.png?20130910043254" alt="Друзья"></div> 
-            </div>
-            </div></div>
-<div align="t" style="overflow:auto;overflow-x:hidden;height:50px;border-top:1px solid gray" id="fights"></div></td></tr></tbody></table> </td></tr> <tr><td id="matab" style="padding:0"> <div class="place">
+    <img id="bg" src="https://i.ibb.co/k5PKnZg/e-Wf-AXWJn5c0.jpg" alt="">
      <?php
     $directory = "./img";    // Папка с изображениями
-    $allowed_types=array("png");  //разрешеные типы изображений
+    $allowed_types=array("jpg", "png", "gif");  //разрешеные типы изображений
     $file_parts = array();
       $ext="";
       $title="";
       $i=0;
     //пробуем открыть папку
-      $dir_handle = @opendir($directory) or die("Ошибка! Напишите одному из администрации об этом");
+      $dir_handle = @opendir($directory) or die("Ошибка при открытии папки !!!");
     while ($file = readdir($dir_handle))    //поиск по файлам
       {
       if($file=="." || $file == "..") continue;  //пропустить ссылки на другие папки
@@ -305,29 +221,82 @@ $("#answer_div").html("Сообщение доставлено "+p.data.number_m
     closedir($dir_handle);  //закрыть папку
     ?>
 
-<style>
-a { color: #141c11; text-decoration: none; border-bottom: 1px solid #5c6b28 ;}
-.place {
 
-border: 1px solid;
+        <div class="top-btns">
+            <div class="profiles_exit">
+                <div id="profile" button><img src="assets/btns/profile.png?20130910043254" alt="Профиль"></div>
+                <div id="exit" button><img src="assets/btns/exit.png?20130910043254" alt="Выход"></div>
+            </div>
 
-width: 1000;
-height: 1000;
-0em auto;
+            <div class="parametrs">
+                <div id="stats" button><img src="assets/btns/stats.png?20130910043254" alt="Параметры"></div>
+                <div id="bag" button><img src="assets/btns/bag.png?20130910043254" alt="Инвентарь"></div>
+                <div id="friends" button><img src="assets/btns/friends.png?20130910043254" alt="Друзья"></div> 
+            </div>
+        </div>    
 
-background-image: ("https://psv4.userapi.com/c534536/u368746875/docs/d25/7534acc21a99/Illustration5.png")
+    <div class="bottom-btns">
+        <div class="map" button><img src="assets/btns/map.png?20130910043254" alt="Карта"></div>
+        <div class="chats">
+            <div id="chat" button><img src="assets/btns/chat.png?20130910043254" alt="Чат"></div>
+            <div id="chat_roll" button><img src="assets/btns/chat_roll.png?20130910043254" alt="Свернутый чат"></div>
+        </div>
+    </div>
 
-padding: 50px;
+    <audio src="assets/audio/click.mp3"></audio>
+<!--     <div class="screenLock" onclick="lock('landscape-primary'); $('.screenLock').css('display', 'none');">
+        <h2 id="rotate">Нажмите любую кнопку для продолжения...</h2>
+    </div> -->
+</body>
 
-background-image: url("https://psv4.userapi.com/c534536/u368746875/docs/d25/7534acc21a99/Illustration5.png");
+</html>
 
 
+<script>
+function lock(orientation) {
+    try{
+  // Go into full screen first
+  if (document.documentElement.requestFullscreen) {
+    document.documentElement.requestFullscreen();
+  } else if (document.documentElement.mozRequestFullScreen) {
+    document.documentElement.mozRequestFullScreen();
+  } else if (document.documentElement.webkitRequestFullscreen) {
+    document.documentElement.webkitRequestFullscreen();
+  } else if (document.documentElement.msRequestFullscreen) {
+    document.documentElement.msRequestFullscreen();
+  }
 
-overflow: hidden;
-position: relative;
-
+  // Then lock orientation
+  screen.orientation.lock(orientation);        
+} catch(e){
+    alert(e)
 }
 
-</style>
+}
+$('div[button]').click(function (e) {
+    e.preventDefault();
+    let audio = document.querySelector('audio')
+    audio.play();
+});
+</script></div>
+<script>
+function reverse() {
+
+var e = document.getElementById("text");
+
+var txt = e.textContent || e.innerText;
+
+var txt2 = 'тип 2';
+var txt3 = 'тип 3';
+var txt1 = 'тип 1';
+  if(txt != txt2){var newtxt = 'тип 2';}
+  if(txt != txt3){var newtxt = 'тип 3';}
+  if (txt!= txt1){var newest = 'zzzz';}
+
+
+document.getElementById('text').innerHTML = newtxt;
+
+}
+</script>
 
 
